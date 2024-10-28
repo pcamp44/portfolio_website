@@ -2,10 +2,10 @@ import { Button } from "reactstrap";
 
 export default function Projects() {
   return (
-    <div className="container" style={{ paddingBottom: '30px' }}>
+    <div className="container" id="project" style={{ paddingBottom: '30px' }}>
       <h2>Projects</h2>
       {/* Project 1: Interactive timeline */}
-      <div className="project">
+      <div id="projects">
         <h3>Interactive Timeline</h3>
 
         <div className="row">
@@ -17,9 +17,9 @@ export default function Projects() {
             <p style={{ fontSize: '15px' }}>*Note: due to confidentiality agreements, detailed screenshots and code cannot be shared. However, I will be happy to discuss my contributions and the technoglies used in more depth during an interview.</p>
           </div>
 
-          <div className="col">
+          {/* <div className="col">
             <img src={require('../static/InteractiveTimeline.jpg')} alt="Interactive Timeline" style={{ width: '400px', height: '250px' }}></img>
-          </div>
+          </div> */}
         </div>
       </div>
       {/* Project 2: Movie Website */}
@@ -34,9 +34,9 @@ export default function Projects() {
             <Button color="info">View on GitHub</Button>
           </div>
 
-          <div className="col">
+          {/* <div className="col">
             <img src={require('../static/InteractiveTimeline.jpg')} alt="Interactive Timeline" style={{ width: '400px', height: '250px' }}></img>
-          </div>
+          </div> */}
         </div>
       </div>
 
