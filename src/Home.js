@@ -1,4 +1,4 @@
-import About from "./sections/About";
+import Skills from "./sections/Skills";
 import Projects from "./sections/Projects";
 import Contact from "./sections/Contact";
 
@@ -6,14 +6,18 @@ export default function Home() {
     return (
         <div>
             <div className="hero">
-                <h1 className="heroSubtitle">Hey, I'm <br /><span className="heroTitle">Pauline</span></h1>
+                <h1>Hey, I'm Pauline</h1>
+                <div className="container">
+                    <p>I am an aspiring full-stack web developer currently completing a Bachelor's degree in Information Technology (Computer Science) at the Queensland University of Technology.</p>
+                </div>
             </div>
 
             <div>
-                <About />
+                <Skills />
                 {/* Once we scroll pass the last element in the container, all elements stop becoming sticky so we can see the elements below it */}
                 <Projects />
             </div>
+
             <Contact />
 
         </div>
