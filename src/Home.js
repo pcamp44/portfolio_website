@@ -13,9 +13,8 @@ export default function Home() {
             </div>
 
             <div>
-                <Skills />
-                {/* Once we scroll pass the last element in the container, all elements stop becoming sticky so we can see the elements below it */}
                 <Projects />
+                <Skills />
             </div>
 
             <Contact />
