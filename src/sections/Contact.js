@@ -3,10 +3,10 @@ export default function Contact() {
         <div id="contact">
             <div className="container">
                 <div className="row" style={{display: 'flex', alignItems:'center'}}>
-                    <div className="col-6">
+                    <div className="col-lg-6 col-sm-12">
                         <h1>Let's Chat</h1>
                     </div>
-                    <div className="col-6">
+                    <div className="col-lg-6 col-sm-12">
                         <ul className="contact-links">
                             <li><a href="https://github.com/pcamp44" className="contact-link">GitHub</a></li>
                             <li><a href="mailto:paulinecampos13@gmail.com" className="contact-link">Email</a></li>
