@@ -1,0 +1,30 @@
+[
+    {
+        "title": "Virtual Library",
+        "start_date": "June 2025",
+        "end_date": "June 2025",
+        "tags": ["website", "front-end"],
+        "overview": "A simple digital library application built as part of The Odin Project's JavaScript Course. The project demonstrates object-oriented programming principles and DOM manipulation using vanilla JavaScript",
+        "technologies_used": ["Vanilla JavaScript", "React", "HTML", "CSS"],
+        "lessons_learnt": "Strengthened my undestanding of JavaScript fundamentals, including object constructors and protoypal inheritance."
+    },
+    {
+        "title": "Interactive Timeline",
+        "start_date": "June 2023",
+        "end_date": "May 2024",
+        "tags": ["website", "front-end"],
+        "img": "https://ik.imagekit.io/1h1de1d5x/static/InteractiveTimeline.jpg?updatedAt=1751081849168",
+        "overview": "My final-year capstone project at university. The interactive timeline allows users to explore chronological data visually and was desgined with usability and responsiveness in mind.",
+        "technologies_used": ["JavaScript", "Python", "Django", "PostgresSQL", "HTML", "CSS", "Bootstrap"],
+        "lessons_learnt": "Gained practical experience collaborating in a team environment to build a real-world application, including version control, agile workflow, and client feedback integration."
+    },
+    {
+        "title": "MovieDB Web Application",
+        "start_date": "May 2023",
+        "end_date": "June 2023",
+        "tags": ["website", "front-end", "back-end", "full-stack"],
+        "overview": " A full-stack web application developed as a university project that enables users to search for and view detailed information about movies. Inspired by platforms such as IMDb, it features a responsive UI and RESTful API integration.",
+        "technologies_used": ["JavaScript", "React", "Node.js", "SwaggerDocs", "HTML", "CSS", "Bootstrap"],
+        "lessons_learnt": "My first independently developed full-stack project. It reinforced my skills in fron-tend development with React and my back-end understanding through building APIs with Node.js."
+    }
+]
