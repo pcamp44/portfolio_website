@@ -74,9 +74,8 @@ nav li:hover {
     background-color: #000000;
 }
 
-    a {
-        color: #FFFFFF;
-    }
+nav li a:hover {
+    color: #FFFFFF;
 }
 
 .hero {
