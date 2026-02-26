@@ -1,17 +1,31 @@
-import { Image } from '@imagekit/react';
+import emailIcon from '../assets/email.svg';
+import githubIcon from '../assets/github.svg';
+import linkedinIcon from '../assets/linkedin.svg';
+
+const contacts = [
+    { href: 'mailto:paulinecampos13@gmail.com', label: 'Email', icon: emailIcon },
+    { href: 'https://github.com/pcamp44', label: 'GitHub', icon: githubIcon },
+    { href: 'https://www.linkedin.com/in/pauline-c-ab714a242/', label: 'LinkedIn', icon: linkedinIcon }
+]
 
 export default function Footer() {
     return (
-        <div className="footer">
-            <div className="container">
+        <footer>
+            <div className='container'>
                 <h1>Thanks for visiting!</h1>
-                <ul className="contact-links">
-                    <li><Image urlEndpoint='https://ik.imagekit.io/1h1de1d5x' src='/static/email.svg' alt="email icon" /><a href="mailto:paulinecampos13@gmail.com" className="contact-link">Email</a></li>
-                    <li><Image urlEndpoint='https://ik.imagekit.io/1h1de1d5x' src='/static/github.png' alt="GitHub logo" /><a href="https://github.com/pcamp44" className="contact-link">GitHub</a></li>
-                    <li><Image urlEndpoint='https://ik.imagekit.io/1h1de1d5x' src='/static/linkedin.svg' alt="LinkedIn logo" /><a href="https://www.linkedin.com/in/pauline-c-ab714a242/" className="contact-link">LinkedIn</a></li>
+                <h6 className='subtitle'>✧ let's connect ✧
+                </h6>
+                <ul className='contact-links'>
+                    {contacts.map(({href, label, icon}) => (
+                        <li key={label}>
+                            <a href={href} target='_blank' rel='noopener noreferrer' className='contact-link'>
+                                <img src={icon} alt={`${label} icon`} className='icon' /> <span>{label}</span>
+                            </a>
+                        </li>
+                    ))}
                 </ul>
-                <h5>Built by Pauline 2025</h5>
+                <h6 className='footer-credit'>&copy; Made by Pauline 2025</h6>
             </div>
-        </div>
+        </footer>
     );
 };
