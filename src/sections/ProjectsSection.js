@@ -8,22 +8,19 @@ export default function ProjectsSection() {
   const navigate = useNavigate();
 
   return (
-    <div className="projects">
-      <div className="py-5 container">
-        <h1>Projects</h1>
-        <div className="project-wrapper row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
-          {/* Coming Soon */}
-          <div className="col">
-            <ProjectCard title="Coming Soon..." date="soon" img={placeholderImg} isComingSoon={true} />
-          </div>
-
-          {/* Existing projects */}
-          {data.map(project => (
-            <div className="col" key={project.title}>
-              <ProjectCard title={project.title} date={project.end_date} img={project.img || placeholderImg} onClick={() => navigate(`/project?projectTitle=${encodeURIComponent(project.title)}`)} />
-            </div>
-          ))}
+    <div className="projects-section">
+      <div className="section-header">
+        <div className="section-head">
+          <span className="section-num">01</span>
+          <span className="section-title">Projects</span>
         </div>
+      </div>
+      <div className="project-wrapper row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+        {data.map(project => (
+          <div className="col" key={project.title}>
+            <ProjectCard title={project.title} date={project.end_date} img={project.img || placeholderImg} onClick={() => navigate(`/project?projectTitle=${encodeURIComponent(project.title)}`)} />
+          </div>
+        ))}
       </div>
     </div>
   );
